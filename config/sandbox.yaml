@@ -1,0 +1,10 @@
+subcomponents:
+  sample-service:
+    config:
+      image:
+        tag: master-20200326.1
+      service:
+        dns: sample-sandbox.contoso.com
+      configMap:
+        DB_CONNECTION_STRING: "postgres://unicef-sandbox.postgresql.azure.com/db"
+      replicas: 1

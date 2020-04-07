@@ -1,0 +1,8 @@
+name: sample-hld-with-config
+subcomponents:
+- name: sample-service
+  type: helm
+  source: https://github.com/timfpark/sample-helm-chart
+  method: git
+  path: ./
+  branch: master

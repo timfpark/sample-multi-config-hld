@@ -1,0 +1,19 @@
+subcomponents:
+  sample-service:
+    config:
+      image:
+        repository: tpark.azurecr.io/sample-service
+      serviceName: sample-service
+      service:
+        port: 80
+      configMap:
+        PORT: 80
+        SERVICE_NAME: sample-service
+      port: 80
+      resources:
+        requests:
+          cpu: "250m"
+          memory: "256Mi"
+        limits:
+          cpu: "1000m"
+          memory: "512Mi"
